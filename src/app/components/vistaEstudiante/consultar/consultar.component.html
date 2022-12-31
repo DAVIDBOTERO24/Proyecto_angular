@@ -1,0 +1,51 @@
+<div class="logo">
+    <img src="https://www.kawak.com.co/uniagustiniana/images/datos_empresa/Logo_320_x_132-02.png" alt="">
+  </div>
+<div class="titule">
+    <h5 class="card-title text-center"> Bienvenid@ {{ estudiante.nombre }} {{ estudiante.apellidos }} </h5>
+</div>
+<div class="container text-center mt-3">
+    <div class="card text-white bg-dark mb-3" style="max-width: 80rem;">
+        <div class="card-header text-center"><h4>Información Estudiante</h4></div>
+        <div class="card-body">
+            <table class="table  table-striped table-bordered">
+                <thead class="table-dark" >
+                    <tr>
+                        <th><label>Nombre:</label></th>
+                        <label class="card-text">{{ estudiante.nombre }}</label>
+                        <th><label>Apellidos:</label></th>
+                        <label class="card-text">{{ estudiante.apellidos }}</label>
+                    </tr>
+                    <tr>
+                        <th><label>Sexo:</label></th>
+                        <label class="card-text">{{ estudiante.sexo }}</label>
+                        <th><label>Tipo de documento:</label></th>
+                        <label class="card-text">{{ estudiante.tipoDocumento }}</label>
+                    </tr>
+                    <tr>
+                        <th><label>Edad:</label></th>
+                        <label class="card-text">{{ estudiante.edad }}</label>
+                        <th><label>Número de documento:</label></th>
+                        <label class="card-text">{{ estudiante.numeroDocumento }}</label>
+                    </tr>
+                    <tr>
+                        <th><label>Dirección:</label></th>
+                        <label class="card-text">{{ estudiante.direccion }}</label>
+                        <th><label>Teléfono:</label></th>
+                        <label class="card-text">{{ estudiante.telefono }}</label>
+                    </tr>
+                    <tr>
+                        <th><label>Correo:</label></th>
+                        <label class="card-text">{{ estudiante.correo }}</label>
+                        <th><label>Carrera:</label></th>
+                        <label class="card-text">{{ estudiante.carrera}}</label>
+                    </tr>
+                    <tr>
+                        <th><label>Jornada:</label></th>
+                        <label class="card-text">{{ estudiante.jornada }}</label>
+                    </tr>
+                </thead>
+            </table>
+        <a class="btn btn-danger" href="registrarse">Regresar</a>
+    </div>
+</div>

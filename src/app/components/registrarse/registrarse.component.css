@@ -1,0 +1,17 @@
+
+div.title{
+    text-align: center;
+    padding: 30px;
+}
+div.container{
+    margin-top: 7%;
+    border-radius: 10px;
+    width: 55%;
+    border: 1px solid rgba(95, 95, 95, 0.212);
+}
+img{
+    width: 40%;
+}
+button{
+    margin: 4px;
+}

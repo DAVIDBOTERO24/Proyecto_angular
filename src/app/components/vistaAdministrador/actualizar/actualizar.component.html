@@ -1,0 +1,121 @@
+<app-menu-administrador></app-menu-administrador>
+
+<div class="container boder-solid">
+  <div class="logo">
+    <img src="https://www.kawak.com.co/uniagustiniana/images/datos_empresa/Logo_320_x_132-02.png" alt="">
+  </div>
+  <div class="title mb-2">
+    <h5 class="card-title text-center">Actualizar información del estudiante</h5>
+  </div>
+
+  <form ngNativeValidate [formGroup]="formularioActualizar" (ngSubmit)="enviardatos()">
+    <div id="card" class="card text-white bg-dark fluid">  
+      <div class="card-body" style="margin-bottom: -25px;">
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="nombre" class="formulario form-control" id="nombre" placeholder="Nombres" required="">
+              <label for="nombre" class="text-dark">Nombres</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="apellidos" class="formulario form-control" id="apellido" placeholder="Apellidos" required="">
+              <label for="apellido" class="text-dark">Apellidos</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <div class="form-floating">
+                <select class="formulario form-select" formControlName="tipoDocumento" id="tipo" required="">
+                  <option disabled selected>Selecciona una opción</option>
+                  <option value="C.C.">C.C.</option>
+                  <option value="T.I.">T.I.</option>
+                </select>
+                <label for="tipo" class="text-dark">Tipo de documento</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="numeroDocumento" class="formulario form-control" id="documento" placeholder="Número de documento" required="">
+              <label for="documento" class="text-dark">Número de documento</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="edad" class="formulario form-control" id="edad" placeholder="Edad" required="">
+              <label for="edad" class="text-dark">Edad</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <div class="form-floating">
+                <select class="formulario form-select" formControlName="sexo" id="genero" required="">
+                  <option disabled selected>Seleccione una opción</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Otro">Otro</option>
+                </select>
+                <label for="genero" class="text-dark">Género</label>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="direccion" class="formulario form-control" id="direccion" placeholder="Dirección" required="">
+              <label for="direccion" class="text-dark">Dirección</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="telefono" class="formulario form-control" id="telefono" placeholder="Teléfono" required="">
+              <label for="telefono" class="text-dark">Teléfono</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="correo" class="formulario form-control" id="correo" placeholder="Email" required="">
+              <label for="correo" class="text-dark">Email</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input type="text" formControlName="carrera" class="formulario form-control" id="carrera" placeholder="Carrera" required="">
+              <label for="carrera" class="text-dark">Carrera</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <div class="form-floating">
+            <select class="formulario form-select" formControlName="jornada" id="jornada" required="">
+              <option disabled selected>Seleccione una opción</option>
+              <option value="Diurna">Diurna</option>
+              <option value="Nocturna">Nocturna</option>
+            </select>
+            <label for="jornada" class="text-dark">Jornada</label>
+          </div>
+        </div>
+  
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Actualizar</button>
+          <button type="button" class="btn btn-secondary" routerLink="/admin/consultar">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>
